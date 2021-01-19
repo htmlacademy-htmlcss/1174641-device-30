@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Inna Makhova](https://up.htmlacademy.ru/htmlcss/30/user/1174641).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Островский](https://htmlacademy.ru/profile/grandmaus).
 
 ---
 
