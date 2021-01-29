@@ -46,3 +46,131 @@
   --special-green: #91C92F;
   --status: #F6DADA;;
 }
+
+.page-body {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  font-family: "Gilroy", Arial, sans-serif;
+  text-align: left;
+}
+
+.page-body a {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+.main-header {
+  background-color: var(--special-yellow-light);
+}
+
+.main-header-logo:hover {
+  opacity: 0.6;
+}
+
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
+.main-menu-list {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.main-menu-link:hover {
+  opacity: 0.6;
+}
+
+.main-menu-link:active {
+  opacity: 0.3;
+}
+
+.main-nav-link {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.main-nav-link:hover {
+  opacity: 0.6;
+}
+
+.main-nav-link:active {
+  opacity: 0.3;
+}
+
+.submenu {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.submenu-link:hover {
+  opacity: 0.6;
+}
+
+.submenu-link:active {
+  opacity: 0.3;
+}
+
+.popular-slide-number {
+  font-weight: 800;
+  font-size: 179px;
+  line-height: 219px;
+  text-transform: uppercase;
+  /*временно сделала серым, чтобы было видно на белом фоне*/
+  color: var(--basic-half-grey);
+}
+
+.popular-slide-caption {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.popular-slide-text {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.button {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background-image: linear-gradient(to bottom, var(--basic-white) 30%, var(--special-yellow-dark) 30%,  var(--special-yellow-dark) 70%, var(--basic-white) 70%);
+}
+
+.button:hover {
+  background: var(--special-yellow-dark);
+}
+
+.button:active {
+  /*неправильно работает, нужно изменить прозрачность только у color,
+  background не меняется*/
+  opacity: 0.3;
+  background: var(--special-yellow-dark);
+}
+
+.popular-slide-details{
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.popular-slide-details dt {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.popular-slide-details dd {
+  font-size: 13px;
+  line-height: 15px;
+}
+
