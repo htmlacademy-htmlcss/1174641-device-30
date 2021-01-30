@@ -62,7 +62,7 @@
   color: var(--basic-black);
 }
 
-.page-body ul {
+.reset-style {
   list-style: none;
 }
 
@@ -157,7 +157,11 @@
   line-height: 22px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  background-image: linear-gradient(to bottom, var(--basic-white) 30%, var(--special-yellow-dark) 30%,  var(--special-yellow-dark) 70%, var(--basic-white) 70%);
+  background-image: linear-gradient(to bottom,
+    var(--basic-white) 30%,
+    var(--special-yellow-dark) 30%,
+    var(--special-yellow-dark) 70%,
+    var(--basic-white) 70%);
 }
 
 .button:hover {
@@ -169,7 +173,7 @@
   color: rgba(var(--basic-black-rgb), 0.3);
 }
 
-.popular-slide-details{
+.popular-slide-details {
   font-weight: 300;
   letter-spacing: 0.1em;
 }
@@ -231,7 +235,7 @@
 }
 
 .advantages-slide p {
-  font-family: Open Sans;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
@@ -246,8 +250,7 @@
 }
 
 .about-us p {
-  font-family: Open Sans;
-  font-style: normal;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 28px;
@@ -267,8 +270,7 @@
 }
 
 .contacts p {
-  font-family: Open Sans;
-  font-style: normal;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 28px;
