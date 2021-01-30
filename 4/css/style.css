@@ -1,0 +1,292 @@
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Gilroy"),
+       url("../fonts/gilroylight.woff2") format("woff2"),
+       url("../fonts/gilroylight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Gilroy"),
+       url("../fonts/gilroyextrabold.woff2") format("woff2"),
+       url("../fonts/gilroyextrabold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans"),
+       url("../fonts/opensanslight.woff2") format("woff2"),
+       url("../fonts/opensanslight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"),
+       url("../fonts/opensans.woff2") format("woff2"),
+       url("../fonts/opensans.woff") format("woff");
+}
+
+:root {
+  --basic-black: #000000;
+  --basic-black-rgb: 0, 0, 0;
+  --basic-dark: #363636;
+  --basic-grey: #464646;
+  --basic-half-grey: #7E7E7E;
+  --basic-grey-light: #E5E5E5;
+  --basic-white: #FFFFFF;
+  --special-yellow-dark: #F0C52E;
+  --special-yellow-light: #F7E296;
+  --special-green: #91C92F;
+  --status: #F6DADA;;
+}
+
+.page-body {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  font-family: "Gilroy", Arial, sans-serif;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.page-body a {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+.page-body ul {
+  list-style: none;
+}
+
+.page-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-header {
+  background-color: var(--special-yellow-light);
+}
+
+.main-logo:hover {
+  opacity: 0.6;
+}
+
+.main-logo:active {
+  opacity: 0.3;
+}
+
+.main-menu-list {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.main-menu-link:hover {
+  opacity: 0.6;
+}
+
+.main-menu-link:active {
+  opacity: 0.3;
+}
+
+.main-nav-link {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.main-nav-link:hover {
+  opacity: 0.6;
+}
+
+.main-nav-link:active {
+  opacity: 0.3;
+}
+
+.submenu {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.submenu-link:hover {
+  opacity: 0.6;
+}
+
+.submenu-link:active {
+  opacity: 0.3;
+}
+
+.popular-slide-number {
+  font-weight: 800;
+  font-size: 179px;
+  line-height: 219px;
+  text-transform: uppercase;
+  /*временно сделала серым, чтобы было видно на белом фоне*/
+  color: var(--basic-half-grey);
+}
+
+.popular-slide-caption {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.popular-slide-text {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.button {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background-image: linear-gradient(to bottom, var(--basic-white) 30%, var(--special-yellow-dark) 30%,  var(--special-yellow-dark) 70%, var(--basic-white) 70%);
+}
+
+.button:hover {
+  background: var(--special-yellow-dark);
+}
+
+.button:active {
+  background-color: var(--special-yellow-dark);
+  color: rgba(var(--basic-black-rgb), 0.3);
+}
+
+.popular-slide-details{
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.popular-slide-details dt {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.popular-slide-details dd {
+  font-size: 13px;
+  line-height: 15px;
+  margin-left: 0; /*убрала автоматический отступ списка определений*/
+}
+
+.categories-link {
+  display: inline-block;
+}
+
+.categories-svg-wrap {
+  background-color: var(--special-yellow-light);
+  width: 160px;
+  height: 160px;
+}
+
+.categories-link h3 {
+  width: 160px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+
+.categories-link:hover .categories-svg-wrap {
+  background-color: var(--special-yellow-dark);
+}
+
+.categories-link:active path {
+  opacity: 0.3;
+}
+
+.categories-link:active h3 {
+  color: rgba(var(--basic-black-rgb), 0.3);
+}
+
+.advantages-slider {
+  background-color: var(--basic-grey-light);
+}
+.advantages-button:active {
+  color: var(--special-yellow-light);
+  background-color: var(--basic-black);
+}
+
+.advantages-slide h3 {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.advantages-slide p {
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+}
+
+.about-us h2 {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.about-us p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.about-us ul {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.contacts h2 {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.contacts p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.main-footer {
+  background-color: var(--basic-dark);
+  color: var(--basic-white);
+}
+
+.main-footer a {
+  color: var(--basic-white);
+}
+
+.copyright:hover {
+  opacity: 0.6;
+}
+
+.copyright:active {
+  opacity: 0.3;
+}
