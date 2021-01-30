@@ -36,6 +36,7 @@
 
 :root {
   --basic-black: #000000;
+  --basic-black-rgb: 0, 0, 0;
   --basic-dark: #363636;
   --basic-grey: #464646;
   --basic-half-grey: #7E7E7E;
@@ -52,6 +53,8 @@
   color: var(--basic-black);
   font-family: "Gilroy", Arial, sans-serif;
   text-align: left;
+  margin: 0;
+  padding: 0;
 }
 
 .page-body a {
@@ -59,15 +62,24 @@
   color: var(--basic-black);
 }
 
+.page-body ul {
+  list-style: none;
+}
+
+.page-body img {
+  max-width: 100%;
+  height: auto;
+}
+
 .main-header {
   background-color: var(--special-yellow-light);
 }
 
-.main-header-logo:hover {
+.main-logo:hover {
   opacity: 0.6;
 }
 
-.main-header-logo:active {
+.main-logo:active {
   opacity: 0.3;
 }
 
@@ -153,10 +165,8 @@
 }
 
 .button:active {
-  /*неправильно работает, нужно изменить прозрачность только у color,
-  background не меняется*/
-  opacity: 0.3;
-  background: var(--special-yellow-dark);
+  background-color: var(--special-yellow-dark);
+  color: rgba(var(--basic-black-rgb), 0.3);
 }
 
 .popular-slide-details{
@@ -172,5 +182,111 @@
 .popular-slide-details dd {
   font-size: 13px;
   line-height: 15px;
+  margin-left: 0; /*убрала автоматический отступ списка определений*/
 }
 
+.categories-link {
+  display: inline-block;
+}
+
+.categories-svg-wrap {
+  background-color: var(--special-yellow-light);
+  width: 160px;
+  height: 160px;
+}
+
+.categories-link h3 {
+  width: 160px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+
+.categories-link:hover .categories-svg-wrap {
+  background-color: var(--special-yellow-dark);
+}
+
+.categories-link:active path {
+  opacity: 0.3;
+}
+
+.categories-link:active h3 {
+  color: rgba(var(--basic-black-rgb), 0.3);
+}
+
+.advantages-slider {
+  background-color: var(--basic-grey-light);
+}
+.advantages-button:active {
+  color: var(--special-yellow-light);
+  background-color: var(--basic-black);
+}
+
+.advantages-slide h3 {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.advantages-slide p {
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+}
+
+.about-us h2 {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.about-us p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.about-us ul {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.contacts h2 {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.contacts p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.main-footer {
+  background-color: var(--basic-dark);
+  color: var(--basic-white);
+}
+
+.main-footer a {
+  color: var(--basic-white);
+}
+
+.copyright:hover {
+  opacity: 0.6;
+}
+
+.copyright:active {
+  opacity: 0.3;
+}
