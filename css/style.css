@@ -62,7 +62,7 @@
   color: var(--basic-black);
 }
 
-.page-body ul {
+.reset-style {
   list-style: none;
 }
 
@@ -157,7 +157,11 @@
   line-height: 22px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  background-image: linear-gradient(to bottom, var(--basic-white) 30%, var(--special-yellow-dark) 30%,  var(--special-yellow-dark) 70%, var(--basic-white) 70%);
+  background-image: linear-gradient(to bottom,
+    var(--basic-white) 30%,
+    var(--special-yellow-dark) 30%,
+    var(--special-yellow-dark) 70%,
+    var(--basic-white) 70%);
 }
 
 .button:hover {
@@ -169,7 +173,7 @@
   color: rgba(var(--basic-black-rgb), 0.3);
 }
 
-.popular-slide-details{
+.popular-slide-details {
   font-weight: 300;
   letter-spacing: 0.1em;
 }
