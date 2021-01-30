@@ -231,7 +231,7 @@
 }
 
 .advantages-slide p {
-  font-family: Open Sans;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
@@ -246,8 +246,7 @@
 }
 
 .about-us p {
-  font-family: Open Sans;
-  font-style: normal;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 28px;
@@ -267,8 +266,7 @@
 }
 
 .contacts p {
-  font-family: Open Sans;
-  font-style: normal;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 28px;
