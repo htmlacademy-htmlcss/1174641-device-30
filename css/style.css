@@ -41,6 +41,9 @@
   --basic-grey: #464646;
   --basic-half-grey: #7E7E7E;
   --basic-grey-light: #E5E5E5;
+  --basic-grey-light2: #EBEBEB;
+  --basic-grey-light3: #D9D9D9;
+  --basic-grey-light4: #DCDCDC;
   --basic-white: #FFFFFF;
   --special-yellow-dark: #F0C52E;
   --special-yellow-light: #F7E296;
@@ -274,6 +277,162 @@
   font-weight: 300;
   font-size: 15px;
   line-height: 28px;
+}
+
+.breadcrumbs {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+}
+.breadcrumbs a {
+  opacity: 0.3;
+ }
+
+.breadcrumbs a:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs a:active {
+  opacity: 0.1;
+}
+
+.filter {
+  background-color: var(--basic-grey-light);
+}
+.filter-caption {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: var(--basic-grey-light4);
+}
+
+.filter-inner fieldset {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.filter-inner legend {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+}
+
+.sort {
+  background-color: var(--basic-grey-light);
+}
+
+.sort-caption {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.sort-list-category {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.sort-link-category {
+  opacity: 0.3;
+}
+
+.sort-link-category:hover {
+  opacity: 0.6;
+}
+
+.sort-link-category:active {
+  opacity: 1;
+}
+
+.active {
+  opacity: 1;
+}
+
+.product-description {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+
+.product p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+}
+
+.button-addtocompare {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  opacity: 0.5;
+}
+
+.button-addtocompare:hover {
+  opacity: 1;
+}
+
+.button-addtocompare:active {
+  opacity: 0.2;
+}
+
+.products-pages {
+  background-color: var(--basic-grey-light2);
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.products-pages li:not(.slick-prev):not(.slick-next):not(.page-active) a {
+  opacity: 0.3;
+}
+
+.products-pages li:not(.slick-prev):not(.slick-next):not(.page-active) a:hover {
+  opacity: 0.6;
+}
+
+.products-pages li:not(.slick-prev):not(.slick-next):not(.page-active) a:active {
+  opacity: 1;
+}
+
+.slick-prev:hover {
+  background-color: var(--basic-grey-light3);
+}
+
+.slick-prev:active {
+  background-color: var(--basic-grey-light3);
+}
+
+.slick-prev:active a {
+  opacity: 0.3;
+}
+
+.slick-next:hover {
+  background-color: var(--basic-grey-light3);
+}
+
+.slick-next:active {
+  background-color: var(--basic-grey-light3);
+}
+
+.slick-next:active a {
+  opacity: 0.3;
 }
 
 .main-footer {
