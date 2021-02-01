@@ -41,9 +41,9 @@
   --basic-grey: #464646;
   --basic-half-grey: #7E7E7E;
   --basic-grey-light: #E5E5E5;
-  --basic-grey-light2: #EBEBEB;
-  --basic-grey-light3: #D9D9D9;
-  --basic-grey-light4: #DCDCDC;
+  --basic-grey-whisper: #EBEBEB;
+  --basic-grey-gainsboro: #D9D9D9;
+  --basic-grey-gainsboro-light: #DCDCDC;
   --basic-white: #FFFFFF;
   --special-yellow-dark: #F0C52E;
   --special-yellow-light: #F7E296;
@@ -285,6 +285,7 @@
   font-size: 14px;
   line-height: 19px;
 }
+
 .breadcrumbs a {
   opacity: 0.3;
  }
@@ -306,7 +307,7 @@
   line-height: 20px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  background-color: var(--basic-grey-light4);
+  background-color: var(--basic-grey-gainsboro-light);
 }
 
 .filter-inner fieldset {
@@ -373,7 +374,7 @@
   letter-spacing: 0.05em;
 }
 
-.button-addtocompare {
+.button-compare {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 13px;
@@ -382,16 +383,16 @@
   opacity: 0.5;
 }
 
-.button-addtocompare:hover {
+.button-compare:hover {
   opacity: 1;
 }
 
-.button-addtocompare:active {
+.button-compare:active {
   opacity: 0.2;
 }
 
 .products-pages {
-  background-color: var(--basic-grey-light2);
+  background-color: var(--basic-grey-whisper);
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
@@ -399,39 +400,55 @@
   text-transform: uppercase;
 }
 
-.products-pages li:not(.slick-prev):not(.slick-next):not(.page-active) a {
+.products-pages a {
   opacity: 0.3;
 }
 
-.products-pages li:not(.slick-prev):not(.slick-next):not(.page-active) a:hover {
+.products-pages a:hover {
   opacity: 0.6;
 }
 
-.products-pages li:not(.slick-prev):not(.slick-next):not(.page-active) a:active {
+.products-pages a:active {
   opacity: 1;
 }
 
-.slick-prev:hover {
-  background-color: var(--basic-grey-light3);
+.page-active a {
+  opacity: 1;
 }
 
-.slick-prev:active {
-  background-color: var(--basic-grey-light3);
+.page-prev a, .page-next a {
+  opacity: 1;
 }
 
-.slick-prev:active a {
+.page-prev a:hover, .page-next a:hover {
+  opacity: 1;
+}
+
+.page-prev a:active, .page-next a:active {
   opacity: 0.3;
 }
 
-.slick-next:hover {
-  background-color: var(--basic-grey-light3);
+.page-prev:hover {
+  background-color: var(--basic-grey-gainsboro);
 }
 
-.slick-next:active {
-  background-color: var(--basic-grey-light3);
+.page-prev:active {
+  background-color: var(--basic-grey-gainsboro);
 }
 
-.slick-next:active a {
+.page-prev:active a {
+  opacity: 0.3;
+}
+
+.page-next:hover {
+  background-color: var(--basic-grey-gainsboro);
+}
+
+.page-next:active {
+  background-color: var(--basic-grey-gainsboro);
+}
+
+.page-next:active a {
   opacity: 0.3;
 }
 
