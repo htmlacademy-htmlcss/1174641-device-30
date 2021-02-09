@@ -95,15 +95,12 @@
 
 .container {
   box-sizing: border-box;
-  width: 1200px;
+  width: 1160px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;;
 }
 
 .main-header {
   box-sizing: border-box;
-  margin: 0 auto;
   padding-right: 60px;
   padding-left: 60px;
   background-image: linear-gradient(to bottom,
@@ -253,11 +250,6 @@
   margin: 0 auto;
 }
 
-.popular-slide-column {
-  /*Grid*/
-  display: grid;
-}
-
 .popular-slide-number {
   font-weight: 800;
   font-size: 179px;
@@ -388,9 +380,10 @@
 }
 
 .advantages-slider {
+  min-height: 403px;
   background-image: linear-gradient(to bottom,
-    transparent 23%,
-    var(--basic-grey-light) 23%,
+    transparent 30%,
+    var(--basic-grey-light) 30%,
     var(--basic-grey-light) 100%
   );
 }
@@ -404,11 +397,7 @@
 
 .advantages-slider-controls {
   width: 280px;
-  /*Flex*/
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  padding-top: 20px; /*примерно*/
 }
 
 .advantages-slider-controls button {
@@ -460,12 +449,6 @@
   gap: 40px;
 }
 
-.about-us {
-  /*Flex*/
-  display: flex;
-  flex-direction: column;
-}
-
 .about-us h2 {
   font-weight: 800;
   font-size: 47px;
@@ -492,12 +475,6 @@
 
 .about-us a {
   width: 260px;
-}
-
-.contacts {
-  /*Flex*/
-  display: flex;
-  flex-direction: column;
 }
 
 .contacts h2 {
@@ -571,24 +548,27 @@
     var(--basic-grey-gainsboro) 30%,
     var(--basic-grey-light) 30%,
     var(--basic-grey-light) 100%);
-    min-height: 70px;
-    margin-bottom: 70px;
+  min-height: 70px;
 }
 
 .caption-columns {
   box-sizing: border-box;
   padding-left: 60px;
+  padding-right: 20px;
   /*Flex*/
   display: flex;
 }
 
-.caption-columns h2 {
+.filter-caption-wrapper {
+  box-sizing: border-box;
   width: 268px;
+  min-height: 70px;
+  background-color: var(--basic-grey-gainsboro);
 }
 
 .sort {
   box-sizing: border-box;
-  width: 822px;
+  width: 812px;
   padding-left: 62px;
   /*Flex*/
   display: flex;
@@ -639,6 +619,8 @@
 .filter {
   box-sizing: border-box;
   width: 268px;
+  padding-top: 70px;
+  background-color: var(--basic-grey-light);
   /*Flex*/
   display: flex;
 }
@@ -689,7 +671,8 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  width: 822px;
+  width: 832px;
+  padding-top: 70px;
   padding-left: 62px;
 }
 
