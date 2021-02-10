@@ -384,8 +384,7 @@
   background-image: linear-gradient(to bottom,
     transparent 30%,
     var(--basic-grey-light) 30%,
-    var(--basic-grey-light) 100%
-  );
+    var(--basic-grey-light) 100%);
 }
 
 .advantages-inner {
@@ -683,7 +682,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
 .product {
