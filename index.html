@@ -27,7 +27,7 @@
       <ul class="main-menu-list main-menu-columns reset-style">
         <li class="main-menu-item search">
           <form action="https://echo.htmlacademy.ru" method="get" class="modal-search">
-            <img width="13px" height="13px" src="img/icon_search.svg" alt="">
+            <img width="13" height="13" src="img/icon_search.svg" alt="">
             <input type="search" name="search" id="search" aria-label="Поиск" placeholder="Поиск по сайту" class="input-search">
             <label for="search" class="visually-hidden">Поиск</label>
             <button type="submit" class="button-search">Найти</button>
@@ -82,8 +82,8 @@
       </ul>
       <nav class="main-nav">
         <ul class="main-nav-list main-nav-columns reset-style">
-          <li class="main-nav-item">
-            <a href="catalog.html" class="main-nav-link catalog">Каталог товаров</a>
+          <li class="main-nav-item catalog">
+            <a href="catalog.html" class="main-nav-link catalog-link">Каталог товаров</a>
             <ul class="submenu submenu-columns reset-style">
               <li class="submenu-item submenu-row-first">
                 <a href="" class="submenu-link">Виртуальная реальность</a>
@@ -132,15 +132,9 @@
                 <p class="popular-slide-number">01</p>
                 <p class="popular-slide-caption">Делай селфи,<br>как Бен Стиллер!</p>
               </div>
-              <p class="popular-slide-text">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-              <div class="slide-inner-wrapper">
-                <a href="" class="button">Подробнее</a>
-                <div class="toggles">
-                  <div class="toggle toggle-check"></div>
-                  <div class="toggle"></div>
-                  <div class="toggle"></div>
-                </div>
-              </div>
+              <p class="popular-slide-text">Самая длинная палка для селфи доступна в нашем магазине.<br>
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <a href="" class="slide-link button">Подробнее</a>
               <dl class="popular-slide-details">
                 <dt>8,5 м</dt>
                 <dd>Длина палки</dd>
@@ -160,15 +154,9 @@
                 <p class="popular-slide-number">02</p>
                 <p class="popular-slide-caption">Худеем<br>правильно!</p>
               </div>
-              <p class="popular-slide-text">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</p>
-              <div class="slide-inner-wrapper">
-                <a href="" class="button">Подробнее</a>
-                <div class="toggles">
-                  <div class="toggle"></div>
-                  <div class="toggle toggle-check"></div>
-                  <div class="toggle"></div>
-                </div>
-              </div>
+              <p class="popular-slide-text">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
+                не пропускать занятия и соблюдать диету.</p>
+              <a href="" class="button">Подробнее</a>
               <dl class="popular-slide-details">
                 <dt>48 часов</dt>
                 <dd>Без подзарядки</dd>
@@ -184,15 +172,9 @@
                 <p class="popular-slide-number">03</p>
                 <p class="popular-slide-caption">Порхает как бабочка, жалит как пчела!</p>
               </div>
-              <p class="popular-slide-text">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>
-              <div class="slide-inner-wrapper">
-                <a href="" class="button">Подробнее</a>
-                <div class="toggles">
-                  <div class="toggle"></div>
-                  <div class="toggle"></div>
-                  <div class="toggle toggle-check"></div>
-                </div>
-              </div>
+              <p class="popular-slide-text">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+                мощным лазером, замаскированным под стандартную камеру.</p>
+              <a href="" class="button">Подробнее</a>
               <dl class="popular-slide-details">
                 <dt>50 м</dt>
                 <dd>Радиус поражения</dd>
@@ -203,9 +185,9 @@
           </li>
         </ul>
         <div class="popular-slider-controls">
-          <button type="button">1</button>
-          <button type="button">2</button>
-          <button type="button">3</button>
+          <button type="button" class="slide-control slide-check"></button>
+          <button type="button" class="slide-control"></button>
+          <button type="button" class="slide-control"></button>
         </div>
       </section>
       <section class="categories container">
@@ -215,13 +197,13 @@
             <a href="" class="categories-link">
               <div class="categories-svg-wrap">
                 <svg width="97" height="55" viewBox="0 0 97 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0)">
+                  <g clip-path="url(#clip10)">
                     <path d="M84.1311 32.639V20.003C84.1311 18.694 85.1761 17.633 86.4661 17.633L94.7921 19.2141V11.02C94.7921 8.66505 93.0841 7.58905 90.5901 6.75505L67.4031 0.175049C69.0191 1.56605 69.2921 2.21505 69.2921 4.57105V49.78C69.2921 52.136 68.8421 53.8461 67.3251 54.9901L90.5901 47.925C92.9911 47.092 94.7921 43.709 94.7921 41.3531V33.44L86.4661 35.007C85.1761 35.009 84.1311 33.947 84.1311 32.639Z" fill="#363636"/>
                     <path d="M95.129 20.979L87.531 19.535C86.523 19.535 85.707 20.364 85.707 21.386V31.254C85.707 32.277 86.523 33.106 87.531 33.106L95.129 31.675C96.283 31.256 96.953 30.846 96.953 29.823V22.83C96.953 21.808 96.187 21.323 95.129 20.979Z" fill="#363636"/>
                     <path d="M67.17 4.48303C67.17 -0.596972 62.938 0.0240287 62.938 0.0240287C62.938 0.0240287 5.83205 4.73803 2.83805 5.14503C-0.155951 5.55203 0.00104837 9.53203 0.00104837 9.53203C0.00104837 9.53203 4.83679e-05 42.069 4.83679e-05 45.812C4.83679e-05 49.555 2.59905 49.565 2.59905 49.565L19.076 50.968L27.212 39.3C27.212 39.3 28.321 37.472 29.717 37.472C31.114 37.472 32.149 39.333 32.149 39.333L41.21 52.854C41.21 52.854 60.105 54.763 63.731 54.763C67.357 54.762 67.17 49.739 67.17 49.739C67.17 49.739 67.17 9.56303 67.17 4.48303ZM12.982 37.192C9.28405 37.192 6.28605 32.591 6.28605 26.917C6.28605 21.243 9.28405 16.642 12.982 16.642C16.68 16.642 19.678 21.243 19.678 26.917C19.678 32.591 16.68 37.192 12.982 37.192ZM49.14 38.618C44.4781 38.618 40.6991 33.379 40.6991 26.917C40.6991 20.454 44.479 15.215 49.14 15.215C53.802 15.215 57.5821 20.454 57.5821 26.917C57.5821 33.379 53.802 38.618 49.14 38.618Z" fill="#363636"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0">
+                    <clipPath id="clip10">
                       <rect width="97" height="55" fill="white"/>
                     </clipPath>
                   </defs>
@@ -343,13 +325,13 @@
             <div class="advantages-slider-controls">
               <div class="controls-inner">
                 <div class="button-wrap current">
-                  <button type="button" class="button advantages-button">Доставка</button>
+                  <button type="button" class="button advantages-button delivery">Доставка</button>
                 </div>
                 <div class="button-wrap">
-                  <button type="button" class="button advantages-button">Гарантия</button>
+                  <button type="button" class="button advantages-button warranty">Гарантия</button>
                 </div>
                 <div class="button-wrap">
-                  <button type="button" class="button advantages-button">Кредит</button>
+                  <button type="button" class="button advantages-button credit">Кредит</button>
                 </div>
               </div>
             </div>
@@ -433,8 +415,8 @@
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
             проверить работоспособность покупки. Всякое бывает.
           </p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548883493!2d37.52742395155921!3d55.68703098044026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sfi!4v1613497769871!5m2!1sru!2sfi"
-            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548883493!2d37.52742395155921!3d55.68703098044026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sfi!4v1613497769871!5m2!1sru!2sfi" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0">
           </iframe>
           <a href="" class="button">Напишите нам</a>
         </section>
@@ -481,7 +463,7 @@
             <li class="main-menu-item">
               <a href="" class="main-menu-link footer-menu-link">
                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0)">
+                  <g clip-path="url(#clip11)">
                     <path d="M9.86215 2.5217C9.79278 2.43991 9.69341 2.39316 9.58927 2.39316H7.65774V3.4188C7.65774 3.89008
                     7.25359 4.2735 6.75684 4.2735C6.26008 4.2735 5.85593 3.89008 5.85593 3.4188V2.39316H4.05413V3.4188C4.05413
                     3.89008 3.64999 4.2735 3.15323 4.2735C2.65648 4.2735 2.25233 3.89008 2.25233 3.4188V2.39316H0.32089C0.216656
@@ -495,7 +477,7 @@
                     3.76068 3.15333 3.76068Z" fill="#FFC600"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0">
+                    <clipPath id="clip11">
                       <rect width="10" height="10" fill="white"/>
                     </clipPath>
                   </defs>
