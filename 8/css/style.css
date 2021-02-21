@@ -778,10 +778,6 @@
   object-fit: contain;
 }
 
-.brands-link:hover img {
-  opacity: 0;
-}
-
 .dji:hover, .dji:active {
   background: url("../img/logo_dji_color.png") no-repeat;
   background-size: contain;
@@ -1106,7 +1102,7 @@
   align-items: center;
  }
 
- .breadcrumbs li:not(:last-child) a::after {
+ .breadcrumbs-item:not(:last-child) a::after {
    content: "";
    width: 12px;
    height: 13px;
@@ -1177,7 +1173,7 @@
   margin-right: 74px;
 }
 
-.sort-column{
+.sort-column {
   display: flex;
   padding-top: 25px;
 }
@@ -1345,7 +1341,7 @@
   height: 20px;
   padding: 0;
   border-radius: 50%;
-  border: 8px solid #ffffff;
+  border: 8px solid var(--basic-white);
   background-color: var(--basic-grey-silver);
   box-shadow: 0px 2px 2px rgba(var(--basic-black-rgb), 0.18);
   cursor: pointer;
@@ -1370,22 +1366,22 @@
   padding: 0;
 }
 
-.filter-color li:not(:last-child) {
+.filter-color-item:not(:last-child) {
   margin-bottom: 15px;
 }
 
-.filter-color input {
+.filter-color-input {
   display: none;
 }
 
-.filter label {
+.filter-color-label {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   cursor: pointer;
 }
 
-.filter-color label::before {
+.filter-color-label::before {
   box-sizing: border-box;
   content: "";
   width: 24px;
@@ -1395,56 +1391,20 @@
   margin-right: 18px;
 }
 
-#filter-black:checked ~ label[for="filter-black"]::before {
+.filter-color-input:checked + .filter-color-label::before {
   content: url("../img/checkbox_on.svg");
   border: none;
 }
 
-#filter-black:disabled ~ label[for="filter-black"] {
+.filter-color-input:disabled + .filter-color-label {
   opacity: 0.3;
 }
 
-#filter-white:checked ~ label[for="filter-white"]::before {
-  content: url("../img/checkbox_on.svg");
-  border: none;
-}
-
-#filter-white:disabled ~ label[for="filter-white"] {
-  opacity: 0.3;
-}
-
-#filter-blue:checked ~ label[for="filter-blue"]::before {
-  content: url("../img/checkbox_on.svg");
-  border: none;
-}
-
-#filter-blue:disabled ~ label[for="filter-blue"] {
-  opacity: 0.3;
-}
-
-#filter-red:checked ~ label[for="filter-red"]::before {
-  content: url("../img/checkbox_on.svg");
-  border: none;
-}
-
-#filter-red:disabled ~ label[for="filter-red"] {
-  opacity: 0.3;
-}
-
-#filter-pink:checked ~ label[for="filter-pink"]::before {
-  content: url("../img/checkbox_on.svg");
-  border: none;
-}
-
-#filter-pink:disabled ~ label[for="filter-pink"] {
-  opacity: 0.3;
-}
-
-.filter-color input:not(:disabled) ~ label:hover::before {
+.filter-color-input:not(:disabled) + .filter-color-label:hover::before {
   opacity: 0.6;
 }
 
-.filter-color input:not(:disabled) ~ label:active::before {
+.filter-color-input:not(:disabled) + .filter-color-label:active::before {
   opacity: 1;
 }
 
@@ -1454,22 +1414,22 @@
   margin-bottom: 50px;
 }
 
-.filter-bluetooth li:not(:last-child) {
+.filter-bluetooth-item:not(:last-child) {
   margin-bottom: 15px;
 }
 
-.filter-bluetooth input[type="radio"] {
+.filter-bluetooth-input {
   display: none;
 }
 
-.filter-bluetooth label {
+.filter-bluetooth-label {
   box-sizing: border-box;
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
-.filter-bluetooth label::before {
+.filter-bluetooth-label::before {
   box-sizing: border-box;
   content: "";
   width: 24px;
@@ -1479,29 +1439,20 @@
   margin-right: 18px;
 }
 
-#filter-bluetooth-true:checked ~ label[for="filter-bluetooth-true"]::before {
+.filter-bluetooth-input:checked + .filter-bluetooth-label::before {
   content: url("../img/radio_on.svg");
   border: none;
 }
 
-#filter-bluetooth-true:disabled ~ label[for="filter-bluetooth-true"] {
+.filter-bluetooth-input:disabled + .filter-bluetooth-label {
   opacity: 0.25;
 }
 
-#filter-bluetooth-false:checked ~ label[for="filter-bluetooth-false"]::before {
-  content: url("../img/radio_on.svg");
-  border: none;
-}
-
-#filter-bluetooth-false:disabled ~ label[for="filter-bluetooth-false"] {
-  opacity: 0.25;
-}
-
-.filter-bluetooth input:not(:disabled) ~ label:hover::before {
+.filter-bluetooth-input:not(:disabled) + .filter-bluetooth-label:hover::before {
   opacity: 0.6;
 }
 
-.filter-bluetooth input:not(:disabled) ~ label:active::before {
+.filter-bluetooth-input:not(:disabled) + .filter-bluetooth-label:active::before {
   opacity: 1;
 }
 
@@ -1527,14 +1478,15 @@
 .products-list {
   margin: 0;
   padding: 0;
-  /*Flex*/
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  padding-bottom: 40px;
+  /*Grid*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 48px;
 }
 
 .product {
-  margin-bottom: 48px;
   position: relative;
 }
 
@@ -1633,12 +1585,31 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin: 0;
-  margin-top: -8px;
   margin-bottom: 78px;
   padding: 0;
   /*Flex*/
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.pages-numbers {
+  margin: 0;
+  padding: 0;
+  /*Flex*/
+  display: flex;
+}
+
+.pages-numbers li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.page-control {
+  min-height: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
+  /*Flex*/
+  display: flex;
   align-items: center;
 }
 
@@ -1658,67 +1629,24 @@
   opacity: 1;
 }
 
-.page-prev {
-  display: flex;
-  align-items: center;
-  min-height: 70px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.page-next {
-  display: flex;
-  align-items: center;
-  min-height: 70px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.page-prev a, .page-next a {
+.page-control a {
   opacity: 1;
 }
 
-.page-prev a:hover, .page-next a:hover {
+.page-control a:hover {
   opacity: 1;
 }
 
-.page-prev a:active, .page-next a:active {
+.page-control a:active {
   opacity: 0.3;
 }
 
-.page-prev:hover {
+.page-control:hover {
   background-color: var(--basic-grey-gainsboro);
 }
 
-.pages-numbers {
-  margin: 0;
-  padding: 0;
-  /*Flex*/
-  display: flex;
-}
-
-.pages-numbers li:not(:last-child) {
-  margin-right: 30px;
-}
-
-.page-prev:active {
+.page-control:active {
   background-color: var(--basic-grey-gainsboro);
-}
-
-.page-prev:active a {
-  opacity: 0.3;
-}
-
-.page-next:hover {
-  background-color: var(--basic-grey-gainsboro);
-}
-
-.page-next:active {
-  background-color: var(--basic-grey-gainsboro);
-}
-
-.page-next:active a {
-  opacity: 0.3;
 }
 
 .main-footer {
