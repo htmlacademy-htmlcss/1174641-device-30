@@ -1478,15 +1478,15 @@
 .products-list {
   margin: 0;
   padding: 0;
-  /*Flex*/
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  padding-bottom: 40px;
+  /*Grid*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 48px;
 }
 
 .product {
-  margin-bottom: 40px;
-  margin-top: 8px;
   position: relative;
 }
 
