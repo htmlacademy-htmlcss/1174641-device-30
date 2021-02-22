@@ -243,8 +243,7 @@
   min-height: 50px;
   background-color: transparent;
   outline: none;
-  border-top: 2px solid var(--basic-black);
-  border-left: 2px solid var(--basic-black);
+  border: 2px solid var(--basic-black);
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
