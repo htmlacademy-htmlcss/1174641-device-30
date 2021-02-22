@@ -243,8 +243,7 @@
   min-height: 50px;
   background-color: transparent;
   outline: none;
-  border-top: 2px solid var(--basic-black);
-  border-left: 2px solid var(--basic-black);
+  border: 2px solid var(--basic-black);
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -761,7 +760,7 @@
 
 .brands-list {
   padding: 0;
-  margin-bottom: 38px;
+  margin-bottom: 90px;
   /*Flex*/
   display: flex;
   justify-content: space-between;
@@ -1686,6 +1685,16 @@
 .address {
   padding: 0;
   margin: 0;
+}
+
+.address:after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  width: 80px;
+  height: 7px;
+  background-color: var(--special-yellow-dark);
+  margin-top: 50px;
 }
 
 .footer-column-first {
