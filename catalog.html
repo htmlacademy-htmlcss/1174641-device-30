@@ -11,7 +11,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
-    <header class="main-header container">
+    <header class="main-header catalog-header container">
       <a href="index.html" class="main-logo">
         <svg width="163" height="35" viewBox="0 0 163 35" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip7)">
@@ -25,26 +25,66 @@
         </svg>
       </a>
       <ul class="main-menu-list main-menu-columns reset-style">
-        <li class="main-menu-item">
-          <a href="" class="main-menu-link search">Поиск по сайту</a>
+        <li class="main-menu-item search">
+          <form action="https://echo.htmlacademy.ru" method="get" class="modal-search">
+            <img width="13" height="13" src="img/icon_search.svg" alt="">
+            <input type="search" name="search" id="search" aria-label="Поиск" placeholder="Поиск по сайту" class="input-search">
+            <label for="search" class="visually-hidden">Поиск</label>
+            <button type="submit" class="button-search">Найти</button>
+          </form>
         </li>
         <li class="main-menu-item">
-          <a href="">Валентин Петухов</a>
+          <a class="main-menu-link user-name">
+            <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.49996 2.33333C7.69704 2.33333 8.66663 3.3775 8.66663 4.66666C8.66663 5.95583 7.69704
+              7 6.49996 7C5.30288 7 4.33329 5.95583 4.33329 4.66666C4.33329 3.3775 5.30288 2.33333 6.49996
+              2.33333ZM6.49996 11.6667C6.49996 11.6667 10.8333 11.6667 10.8333 10.5C10.8333 9.1 8.72079
+              7.58333 6.49996 7.58333C4.27913 7.58333 2.16663 9.1 2.16663 10.5C2.16663 11.6667 6.49996 11.6667
+              6.49996 11.6667Z" fill="black"/>
+            </svg>
+            Валентин Петухов
+          </a>
+          <a href="" class="main-menu-link logout">Выйти</a>
         </li>
         <li class="main-menu-item">
-          <a href="" class="main-menu-link enter">Выйти</a>
+          <a href="" class="main-menu-link menu-item-hover">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.91675 5.36667H4.66675V11.0833H2.91675V5.36667ZM6.18342 2.91667H7.81675V11.0833H6.18342V2.91667ZM9.45008
+               7.58334H11.0834V11.0833H9.45008V7.58334Z" fill="black"/>
+            </svg>
+            Сравнить
+          </a>
         </li>
         <li class="main-menu-item">
-          <a href="" class="main-menu-link compare">Сравнить</a>
-        </li>
-        <li class="main-menu-item">
-          <a href="" class="main-menu-link basket">Корзина</a>
+          <a href="" class="main-menu-link menu-item-hover">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path d="M9.86215 2.5217C9.79278 2.43991 9.69341 2.39316 9.58927 2.39316H7.65774V3.4188C7.65774 3.89008
+                7.25359 4.2735 6.75684 4.2735C6.26008 4.2735 5.85593 3.89008 5.85593 3.4188V2.39316H4.05413V3.4188C4.05413
+                3.89008 3.64999 4.2735 3.15323 4.2735C2.65648 4.2735 2.25233 3.89008 2.25233 3.4188V2.39316H0.32089C0.216656
+                2.39316 0.117286 2.43991 0.0479169 2.5217C-0.0215425 2.6035 -0.0544254 2.71256 -0.0425335 2.82145L0.605665
+                  8.78461C0.617737 9.45692 1.14179 9.99999 1.78431 9.99999H8.12584C8.76828 9.99999 9.29233 9.45692 9.30449
+                  8.78452L9.95269 2.82136C9.96449 2.71256 9.93161 2.6035 9.86215 2.5217Z" fill="#231F20"/>
+                <path d="M3.15333 3.76068C3.35207 3.76068 3.51369 3.60735 3.51369 3.4188V1.53846C3.51369 1.01051 4.07486
+                0.683761 4.59477 0.683761H5.49567C6.04288 0.683761 6.39657 1.01923 6.39657 1.53846V3.4188C6.39657 3.60735
+                6.55829 3.76068 6.75693 3.76068C6.95558 3.76068 7.11729 3.60735 7.11729 3.4188V1.53846C7.11729 0.647009
+                6.43531 0 5.49567 0H4.59477C3.60126 0 2.79297 0.690171 2.79297 1.53846V3.4188C2.79297 3.60735 2.95459
+                3.76068 3.15333 3.76068Z" fill="#231F20"/>
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="10" height="10" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+            Корзина
+          </a>
         </li>
       </ul>
       <nav class="main-nav">
         <ul class="main-nav-list main-nav-columns reset-style">
-          <li class="main-nav-item">
-            <a href="catalog.html" class="main-nav-link catalog">Каталог товаров</a>
+          <li class="main-nav-item catalog">
+            <a href="catalog.html" class="main-nav-link catalog-link">Каталог товаров</a>
             <ul class="submenu submenu-columns reset-style">
               <li class="submenu-item submenu-row-first">
                 <a href="" class="submenu-link">Виртуальная реальность</a>
@@ -82,13 +122,13 @@
     <main>
       <h1 class="main-catalog-caption container">Моноподы для селфи</h1>
       <ul class="breadcrumbs reset-style container">
-        <li>
+        <li class="breadcrumbs-item">
           <a href="index.html">Главная</a>
         </li>
-        <li>
+        <li class="breadcrumbs-item">
           <a href="catalog.html">Каталог товаров</a>
         </li>
-        <li>
+        <li class="breadcrumbs-item">
           <a href="">Моноподы для селфи</a>
         </li>
       </ul>
@@ -101,7 +141,7 @@
               </div>
               <div class="sort">
                 <div class="sort-column">
-                  <p class="sort-caption">Сортировка</p>
+                  <p class="sort-caption">Сортировка:</p>
                   <ul class="sort-list-category reset-style">
                     <li>
                       <a href="" class="sort-link-category active">По цене</a>
@@ -116,10 +156,10 @@
                 </div>
                 <ul class="sort-list-order reset-style">
                   <li>
-                    <a href="" class="sort-link-order sort-up">По возрастанию</a>
+                    <a href="" class="sort-link-order sort-up"></a>
                   </li>
                   <li>
-                    <a href="" class="sort-link-order sort-down">По убыванию</a>
+                    <a href="" class="sort-link-order sort-down enabled"></a>
                   </li>
                 </ul>
               </div>
@@ -132,45 +172,63 @@
               <section class="filter">
                 <div class="filter-column">
                   <form method="get" action="https://echo.htmlacademy.ru" class="filter-inner">
-                    <fieldset>
+                    <fieldset class="filter-price-wrap">
                       <legend>Стоимость</legend>
-                      <div class="range-controls"></div>
+                      <div class="range-filter">
+                        <div class="range-controls">
+                          <div class="scale">
+                            <div class="bar"></div>
+                          </div>
+                          <div class="toggle-wrap toggle-min">
+                            <div class="toggle" tabindex="0"></div>
+                            <p>от
+                              <span id="min-price">0</span>
+                            </p>
+                          </div>
+                          <div class="toggle-wrap toggle-max">
+                            <div class="toggle" tabindex="0"></div>
+                            <p>до
+                              <span id="max-price">5000</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="filter-color-wrap">
                       <legend>Цвет</legend>
                       <ul class="filter-color reset-style">
-                        <li>
-                          <input type="checkbox" name="black" id="filter-black" value="black" checked>
-                          <label for="filter-black">Черный</label>
+                        <li class="filter-color-item">
+                          <input type="checkbox" class="filter-color-input" name="black" id="filter-black" value="black" checked>
+                          <label for="filter-black" class="filter-color-label">Черный</label>
                         </li>
-                        <li>
-                          <input type="checkbox" name="white" id="filter-white" value="white">
-                          <label for="filter-white">Белый</label>
+                        <li class="filter-color-item">
+                          <input type="checkbox" class="filter-color-input" name="white" id="filter-white" value="white">
+                          <label for="filter-white" class="filter-color-label">Белый</label>
                         </li>
-                        <li>
-                          <input type="checkbox" name="blue" id="filter-blue" value="blue" checked>
-                          <label for="filter-blue">Синий</label>
+                        <li class="filter-color-item">
+                          <input type="checkbox" class="filter-color-input" name="blue" id="filter-blue" value="blue" checked>
+                          <label for="filter-blue" class="filter-color-label">Синий</label>
                         </li>
-                        <li>
-                          <input type="checkbox" name="red" id="filter-red" value="red" checked>
-                          <label for="filter-red">Красный</label>
+                        <li class="filter-color-item">
+                          <input type="checkbox" class="filter-color-input" name="red" id="filter-red" value="red" checked>
+                          <label for="filter-red" class="filter-color-label">Красный</label>
                         </li>
-                        <li>
-                          <input type="checkbox" name="pink" id="filter-pink" value="pink">
-                          <label for="filter-pink">Розовый</label>
+                        <li class="filter-color-item">
+                          <input type="checkbox" class="filter-color-input" name="pink" id="filter-pink" value="pink">
+                          <label for="filter-pink" class="filter-color-label">Розовый</label>
                         </li>
                       </ul>
                     </fieldset>
                     <fieldset>
                       <legend>Bluetooth</legend>
                       <ul class="filter-bluetooth reset-style">
-                        <li>
-                          <input type="radio" name="bluetooth" value="bluetooth-true" id="filter-bluetooth-true" checked>
-                          <label for="filter-bluetooth-true">Есть</label>
+                        <li class="filter-bluetooth-item">
+                          <input type="radio" class="filter-bluetooth-input" name="bluetooth" value="bluetooth-true" id="filter-bluetooth-true" checked>
+                          <label for="filter-bluetooth-true" class="filter-bluetooth-label">Есть</label>
                         </li>
-                        <li>
-                          <input type="radio" name="bluetooth" value="bluetooth-false" id="filter-bluetooth-false">
-                          <label for="filter-bluetooth-false">Нет</label>
+                        <li class="filter-bluetooth-item">
+                          <input type="radio" class="filter-bluetooth-input" name="bluetooth" value="bluetooth-false" id="filter-bluetooth-false">
+                          <label for="filter-bluetooth-false" class="filter-bluetooth-label">Нет</label>
                         </li>
                       </ul>
                     </fieldset>
@@ -182,44 +240,64 @@
                 <h2 class="visually-hidden">Список товаров</h2>
                 <ul class="products-list reset-style">
                   <li class="product">
-                    <img class="product-image" src="img/product1.png" width="360" height="380" alt="Изображение: Любительская селфи-палка">
-                    <a href="" class="product-description">
-                      <h3>Любительская селфи-палка</h3>
-                    </a>
-                    <p>1100 руб.</p>
-                    <button type="button" class="button-addtocart button">В корзину</button>
-                    <button type="button" class="button-compare">Добавить к сравнению</button>
+                    <img class="product-image" src="img/product1.png" width="360" height="380"
+                      alt="Изображение: Любительская селфи-палка">
+                    <div class="product-description-wrap">
+                      <a href="" class="product-description">
+                        <h3>Любительская селфи&#8209;палка</h3>
+                      </a>
+                      <p>1100 руб.</p>
+                    </div>
+                    <div class="product-buttons-wrap">
+                      <button type="button" class="button-addtocart button">В корзину</button>
+                      <button type="button" class="button-compare">Добавить к сравнению</button>
+                    </div>
                   </li>
                   <li class="product">
-                    <img class="product-image" src="img/product2.png" width="360" height="380" alt="Изображение: Профессиональная селфи-палка">
-                    <a href="" class="product-description">
-                      <h3>Профессиональная селфи-палка</h3>
-                    </a>
-                    <p>1500 руб.</p>
-                    <button type="button" class="button-addtocart button">В корзину</button>
-                    <button type="button" class="button-compare">Добавить к сравнению</button>
+                    <img class="product-image" src="img/product2.png" width="360" height="380"
+                      alt="Изображение: Профессиональная селфи-палка">
+                    <div class="product-description-wrap">
+                      <a href="" class="product-description">
+                        <h3>Профессиональная селфи&#8209;палка</h3>
+                      </a>
+                      <p>1500 руб.</p>
+                    </div>
+                    <div class="product-buttons-wrap">
+                      <button type="button" class="button-addtocart button">В корзину</button>
+                      <button type="button" class="button-compare">Добавить к сравнению</button>
+                    </div>
                   </li>
                   <li class="product">
-                    <img class="product-image" src="img/product3.png" width="360" height="380" alt="Изображение: Непотопляемая селфи-палка">
-                    <a href="" class="product-description">
-                      <h3>Непотопляемая селфи-палка</h3>
-                    </a>
-                    <p>1500 руб.</p>
-                    <button type="button" class="button-addtocart button">В корзину</button>
-                    <button type="button" class="button-compare">Добавить к сравнению</button>
+                    <img class="product-image" src="img/product3.png" width="360" height="380"
+                      alt="Изображение: Непотопляемая селфи-палка">
+                    <div class="product-description-wrap">
+                      <a href="" class="product-description">
+                        <h3>Непотопляемая селфи&#8209;палка</h3>
+                      </a>
+                      <p>1500 руб.</p>
+                    </div>
+                    <div class="product-buttons-wrap">
+                      <button type="button" class="button-addtocart button">В корзину</button>
+                      <button type="button" class="button-compare">Добавить к сравнению</button>
+                    </div>
                   </li>
                   <li class="product">
-                    <img class="product-image" src="img/product4.png" width="360" height="380" alt="Изображение: Селфи-палка «Следуй за мной»">
-                    <a href="" class="product-description">
-                      <h3>Селфи-палка «Следуй за мной»</h3>
-                    </a>
-                    <p>1900 руб.</p>
-                    <button type="button" class="button-addtocart button">В корзину</button>
-                    <button type="button" class="button-compare">Добавить к сравнению</button>
+                    <img class="product-image" src="img/product4.png" width="360" height="380"
+                      alt="Изображение: Селфи-палка «Следуй за мной»">
+                    <div class="product-description-wrap">
+                      <a href="" class="product-description">
+                        <h3>Селфи&#8209;палка «Следуй за мной»</h3>
+                      </a>
+                      <p>1900 руб.</p>
+                    </div>
+                    <div class="product-buttons-wrap">
+                      <button type="button" class="button-addtocart button">В корзину</button>
+                      <button type="button" class="button-compare">Добавить к сравнению</button>
+                    </div>
                   </li>
                 </ul>
                 <ul class="products-pages reset-style">
-                  <li class="page-prev">
+                  <li class="page-control">
                     <a>Назад</a>
                   </li>
                   <li>
@@ -235,7 +313,7 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="page-next">
+                  <li class="page-control">
                     <a href="">Вперед</a>
                   </li>
                 </ul>
@@ -263,16 +341,51 @@
           </a>
           <ul class="main-menu-list footer-main-menu reset-style">
             <li class="main-menu-item">
-              <a href="">Валентин Петухов</a>
+              <a class="main-menu-link footer-menu-link user-name">
+                <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.49996 2.33333C7.69704 2.33333 8.66663 3.3775 8.66663 4.66666C8.66663 5.95583 7.69704
+                  7 6.49996 7C5.30288 7 4.33329 5.95583 4.33329 4.66666C4.33329 3.3775 5.30288 2.33333 6.49996
+                  2.33333ZM6.49996 11.6667C6.49996 11.6667 10.8333 11.6667 10.8333 10.5C10.8333 9.1 8.72079
+                  7.58333 6.49996 7.58333C4.27913 7.58333 2.16663 9.1 2.16663 10.5C2.16663 11.6667 6.49996 11.6667
+                  6.49996 11.6667Z" fill="#F7E296"/>
+                </svg>
+                Валентин Петухов
+              </a>
+              <a href="" class="main-menu-link footer-menu-link">Выйти</a>
             </li>
             <li class="main-menu-item">
-              <a href="" class="main-menu-link enter">Выйти</a>
+              <a href="" class="main-menu-link footer-menu-link">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.91675 5.36667H4.66675V11.0833H2.91675V5.36667ZM6.18342 2.91667H7.81675V11.0833H6.18342V2.91667ZM9.45008
+                   7.58334H11.0834V11.0833H9.45008V7.58334Z" fill="#FFC600"/>
+                </svg>
+                Сравнить
+              </a>
             </li>
             <li class="main-menu-item">
-              <a href="" class="main-menu-link compare">Сравнить</a>
-            </li>
-            <li class="main-menu-item">
-              <a href="" class="main-menu-link basket">Корзина</a>
+              <a href="" class="main-menu-link footer-menu-link">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip9)">
+                    <path d="M9.86215 2.5217C9.79278 2.43991 9.69341 2.39316 9.58927 2.39316H7.65774V3.4188C7.65774 3.89008
+                    7.25359 4.2735 6.75684 4.2735C6.26008 4.2735 5.85593 3.89008 5.85593 3.4188V2.39316H4.05413V3.4188C4.05413
+                    3.89008 3.64999 4.2735 3.15323 4.2735C2.65648 4.2735 2.25233 3.89008 2.25233 3.4188V2.39316H0.32089C0.216656
+                    2.39316 0.117286 2.43991 0.0479169 2.5217C-0.0215425 2.6035 -0.0544254 2.71256 -0.0425335 2.82145L0.605665
+                      8.78461C0.617737 9.45692 1.14179 9.99999 1.78431 9.99999H8.12584C8.76828 9.99999 9.29233 9.45692 9.30449
+                      8.78452L9.95269 2.82136C9.96449 2.71256 9.93161 2.6035 9.86215 2.5217Z" fill="#FFC600"/>
+                    <path d="M3.15333 3.76068C3.35207 3.76068 3.51369 3.60735 3.51369 3.4188V1.53846C3.51369 1.01051 4.07486
+                    0.683761 4.59477 0.683761H5.49567C6.04288 0.683761 6.39657 1.01923 6.39657 1.53846V3.4188C6.39657 3.60735
+                    6.55829 3.76068 6.75693 3.76068C6.95558 3.76068 7.11729 3.60735 7.11729 3.4188V1.53846C7.11729 0.647009
+                    6.43531 0 5.49567 0H4.59477C3.60126 0 2.79297 0.690171 2.79297 1.53846V3.4188C2.79297 3.60735 2.95459
+                    3.76068 3.15333 3.76068Z" fill="#FFC600"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip9">
+                      <rect width="10" height="10" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                Корзина
+              </a>
             </li>
           </ul>
         </div>
@@ -294,13 +407,13 @@
             </ul>
             <ul class="social reset-style">
               <li>
-                <a href="" aria-label="Девайс в Фейсбук" class="social-facebook">Девайс в Фейсбук</a>
+                <a href="" aria-label="Девайс в Фейсбук" class="social-facebook"></a>
               </li>
               <li>
-                <a href="" aria-label="Девайс в Инстаграм" class="social-instagram">Девайс в Инстаграм</a>
+                <a href="" aria-label="Девайс в Инстаграм" class="social-instagram"></a>
               </li>
               <li>
-                <a href="" aria-label="Девайс в Твиттере" class="social-twitter">Девайс в Твиттере</a>
+                <a href="" aria-label="Девайс в Твиттере" class="social-twitter"></a>
               </li>
             </ul>
           </div>
