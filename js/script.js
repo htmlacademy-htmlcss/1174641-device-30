@@ -17,6 +17,25 @@ linkContactForm.addEventListener('click', function(evt) {
   modalContactForm.classList.add('show-modal');
 });
 
+//отправка данных контактной формы
+const popup = document.querySelector('.modal-contact');
+const form = popup.querySelector('.contact-form');
+const user = popup.querySelector('.contact-name');
+const email = popup.querySelector('.contact-email');
+const storageUser = localStorage.getItem('user');
+const storageEmail = localStorage.getItem('email');
+
+form.addEventListener('submit', function(evt) {
+  if (!user.value || !email.value) {
+    evt.preventDefault();
+    alert('Введите имя и адрес электронной почты');
+  }
+  else {
+  localStorage.setItem('user', user.value);
+  localStorage.setItem('email', email.value);
+  }
+});
+
 //кнопка закрыть модальное окно
 let buttonsClose = document.querySelectorAll('.modal-close');
 for (let i = 0; i < buttonsClose.length; i++) {
