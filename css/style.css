@@ -813,6 +813,9 @@
   width: 156px;
   height: 188px;
   background: url("../img/credit.png") no-repeat;
+  top: -23px;
+  position: absolute;
+  right: 8px;
 }
 
 .advantages-slide h3 {
@@ -1039,8 +1042,8 @@
   background-position: center;
   background-color: rgba(var(--special-yellow-light-rgb), 0.5);
   position: absolute;
-  right: 18px;
-  top: 18px;
+  right: 20px;
+  top: 26px;
   cursor: pointer;
 }
 
@@ -1054,7 +1057,7 @@
 
 .modal-contact {
   box-sizing: border-box;
-  padding-top: 92px;
+  padding-top: 97px;
   padding-right: 100px;
   padding-left: 100px;
   padding-bottom: 60px;
@@ -1110,7 +1113,7 @@
 
 .contact-field-wrap {
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 44px;
   /*Flex*/
   display: flex;
   flex-direction: column;
@@ -1125,7 +1128,6 @@
   min-height: 167px;
   background-color: var(--basic-white-smoke);
   border: none;
-  padding-bottom: 5px;
   padding-top: 16px;
   padding-left: 20px;
   overflow: hidden;
