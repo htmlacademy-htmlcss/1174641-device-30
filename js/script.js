@@ -1,5 +1,5 @@
 //открытие модального окна с картой
-const linkMap = document.querySelector('.contacts-map-link');
+let linkMap = document.querySelector('.contacts-map-link');
 let modalMap = document.querySelector('.modal-map');
 
 linkMap.addEventListener ('click', function(evt) {
@@ -9,22 +9,27 @@ linkMap.addEventListener ('click', function(evt) {
 
 
 //открытие модального окна с контактной формой
-const linkContactForm = document.querySelector('.contact-form-link');
+let linkContactForm = document.querySelector('.contact-form-link');
 let modalContactForm = document.querySelector('.modal-contact');
+let form = modalContactForm.querySelector('.contact-form');
+let user = modalContactForm.querySelector('.contact-name');
+let email = modalContactForm.querySelector('.contact-email');
+let storageUser = localStorage.getItem('user');
+let storageEmail = localStorage.getItem('email');
 
 linkContactForm.addEventListener('click', function(evt) {
   evt.preventDefault();
   modalContactForm.classList.add('show-modal');
+  user.focus();
+  if (storageUser) {
+    user.value = storageUser;
+  }
+  if (storageEmail) {
+    email.value = storageEmail;
+  }
 });
 
 //отправка данных контактной формы
-const popup = document.querySelector('.modal-contact');
-const form = popup.querySelector('.contact-form');
-const user = popup.querySelector('.contact-name');
-const email = popup.querySelector('.contact-email');
-const storageUser = localStorage.getItem('user');
-const storageEmail = localStorage.getItem('email');
-
 form.addEventListener('submit', function(evt) {
   if (!user.value || !email.value) {
     evt.preventDefault();

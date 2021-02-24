@@ -50,10 +50,12 @@
   --basic-white: #FFFFFF;
   --basic-white-rgb: 255, 255, 255;
   --special-yellow-dark: #F0C52E;
+  --special-yellow-dark-rgb: 240,197,46;
   --special-yellow-light: #F7E296;
   --special-yellow-light-rgb: 247, 226, 150;
   --special-green: #91C92F;
   --status: #F6DADA;;
+  --transparent: transparent;
 }
 
 .visually-hidden {
@@ -231,7 +233,7 @@
   min-height: 50px;
   border: none;
   outline: none;
-  background: transparent;
+  background-color: var(--transparent);
   padding-left: 38px;
   padding-top: 15px;
   font-family: "Open Sans", Arial, sans-serif;
@@ -249,7 +251,7 @@
   bottom: 0;
   width: 84px;
   min-height: 50px;
-  background-color: transparent;
+  background-color: var(--transparent);
   outline: none;
   border: 2px solid var(--basic-black);
   font-family: "Open Sans", Arial, sans-serif;
@@ -287,7 +289,7 @@
   display: block;
   border: none;
   background-color: var(--basic-black);
-  color:rgba(var(--basic-white-rgb), 0.3);
+  color: rgba(var(--basic-white-rgb), 0.3);
   box-shadow: none;
 }
 
@@ -321,12 +323,12 @@
 
 .catalog-link::after {
   display: inline-block;
+  vertical-align: top;
   content: "";
   width: 22px;
   min-height: 22px;
   background: url("../img/icon_plus.svg") no-repeat;
   margin-left: 14px;
-  vertical-align: top;
 }
 
 .submenu {
@@ -400,18 +402,17 @@
 .popular-slider {
   background-image: linear-gradient(to bottom,
     var(--special-yellow-light) 143px,
-    transparent 143px,
-    transparent 100%);
+    var(--transparent) 143px,
+    var(--transparent) 100%);
   padding-top: 16px;
-  /*overflow: hidden;*/
-  margin-bottom: 112px;
+  margin-bottom: 116px;
   position: relative;
 }
 
 .popular-slide-list {
   padding-right: 60px;
   display: inline-block;
-  /*width: 300%;*/
+  vertical-align: top;
 }
 
 .popular-slide-item {
@@ -457,6 +458,7 @@
 
 .popular-slide-number::before {
   display: inline-block;
+  vertical-align: top;
   content: "";
   width: 100px;
   height: 7px;
@@ -565,6 +567,7 @@
 
 .button {
   display: inline-block;
+  vertical-align: middle;
   box-sizing: border-box;
   outline: none;
   border: none;
@@ -577,11 +580,11 @@
   padding-bottom: 9px;
   padding-top: 9px;
   background-image: linear-gradient(to bottom,
-    transparent 40%,
+    var(--transparent) 40%,
     var(--special-yellow-dark) 40%,
     var(--special-yellow-dark) 60%,
-    transparent 60%);
-  background-color: transparent;
+    var(--transparent) 60%);
+  background-color: var(--transparent);
 }
 
 .button:hover {
@@ -613,7 +616,7 @@
 .popular-slider-controls {
   position: absolute;
   right: 88px;
-  bottom: 141px;
+  bottom: 137px;
   width: 72px;
   /*Flex*/
   display: flex;
@@ -630,7 +633,7 @@
   border: 1px solid var(--basic-black);
   margin: 0;
   padding: 0;
-  background-color: transparent;
+  background-color: var(--transparent);
   cursor: pointer;
 }
 
@@ -656,6 +659,7 @@
 
 .categories-link {
   display: inline-block;
+  vertical-align: top;
 }
 
 .categories-svg-wrap {
@@ -700,7 +704,7 @@
 .advantages-slider {
   min-height: 408px;
   background-image: linear-gradient(to bottom,
-    transparent 120px,
+    var(--transparent) 120px,
     var(--basic-grey-light) 120px,
     var(--basic-grey-light) 100%);
   margin-bottom: 91px;
@@ -954,6 +958,7 @@
 
 .transport-companies-list li::before {
   display: inline-block;
+  vertical-align: middle;
   box-sizing: border-box;
   content: "";
   width: 8px;
@@ -964,8 +969,6 @@
 }
 
 .about-us a {
-  display: inline-block;
-  box-sizing: border-box;
   padding-left: 24px;
   padding-right: 19px;
 }
@@ -1040,7 +1043,7 @@
   border-radius: 50%;
   background: url("../img/icon_cross.svg") no-repeat;
   background-position: center;
-  background-color: rgba(var(--special-yellow-light-rgb), 0.5);
+  background-color: rgba(var(--special-yellow-dark-rgb), 0.5);
   position: absolute;
   right: 20px;
   top: 26px;
@@ -1048,11 +1051,11 @@
 }
 
 .modal-close:hover {
-  background-color: var(--special-yellow-light);
+  background-color: var(--special-yellow-dark);
 }
 
 .modal-close:active {
-  background-color: rgba(var(--special-yellow-light-rgb), 0.3);
+  background-color: rgba(var(--special-yellow-dark-rgb), 0.3);
 }
 
 .modal-contact {
@@ -1105,7 +1108,7 @@
 }
 
 .contact-user-wrap input:focus {
-  background-color: transparent;
+  background-color: var(--transparent);
   outline: none;
   border: 2px solid var(--special-yellow-dark);
   color: var(--basic-dark);
@@ -1148,7 +1151,7 @@
 }
 
 .contact-field-wrap textarea:focus {
-  background-color: transparent;
+  background-color: var(--transparent);
   outline: none;
   border: 2px solid var(--special-yellow-dark);
   color: var(--basic-dark);
@@ -1157,23 +1160,10 @@
 .contact-form-button {
   padding-left: 34px;
   padding-right: 35px;
-  background-image: linear-gradient(to bottom, transparent 40%, var(--special-yellow-light) 40%, var(--special-yellow-light) 60%, transparent 60%);
-  background-color: transparent;
+  background-color: var(--transparent);
 }
 
-.contact-form-button:hover {
-  background: var(--special-yellow-light);
-}
-
-.contact-form-button:active {
-  background-color: var(--special-yellow-light);
-  color: rgba(var(--basic-black-rgb), 0.3);
-}
-
-
-.contacts .button {
-  display: inline-block;
-  box-sizing: border-box;
+.contact-form-link {
   padding-left: 40px;
   padding-right: 38px;
 }
@@ -1307,6 +1297,10 @@
   opacity: 0.6;
 }
 
+.active:hover {
+  opacity: 1;
+}
+
 .sort-link-category:active {
   opacity: 1;
 }
@@ -1322,6 +1316,7 @@
 
 .sort-link-order {
   display: inline-block;
+  vertical-align: top;
   width: 17px;
   height: 15px;
 }
@@ -1378,11 +1373,9 @@
   margin: 0;
 }
 
-.filter-inner fieldset {
-  font-family: "Open Sans", Arial, sans-serif;
+.filter-wrap {
   font-weight: 300;
   font-size: 14px;
-  line-height: 19px;
   outline: none;
   border: none;
   padding: 0;
@@ -1390,11 +1383,18 @@
   margin-bottom: 37px;
 }
 
-.filter-inner .filter-bluetooth-wrap {
+.filter-color-wrap {
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 19px;
+}
+
+.filter-bluetooth-wrap {
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 19px;
   margin-bottom: 42px;
 }
 
-.filter-inner legend {
+.filter-wrap legend {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 14px;
@@ -1403,7 +1403,7 @@
   margin-bottom: 30px;
 }
 
-.filter-inner legend::before {
+.filter-wrap legend::before {
   display: block;
   content: "";
   width: 200px;
@@ -1438,12 +1438,13 @@
 }
 
 .toggle {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .toggle-wrap p {
   padding: 0;
   margin: 0;
+  line-height: 16px;
 }
 
 /*perfect pixel*/
@@ -1465,12 +1466,6 @@
 
 .range-controls .toggle-max {
   left: 114px;
-}
-
-.price-controls p {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
 }
 
 .filter-color-wrap {
@@ -1618,7 +1613,7 @@
   content: "";
   width: 62px;
   height: 62px;
-  background-color: transparent;
+  background-color: var(--transparent);
   background: url("../img/shape_new.svg") no-repeat;
   background-position: center;
   position: absolute;
@@ -1684,7 +1679,7 @@
   padding-left: 37px;
   padding-right: 38px;
   margin-bottom: 18px;
-  background-color: transparent;
+  background-color: var(--transparent);
 }
 
 .button-compare {
@@ -1696,7 +1691,7 @@
   opacity: 0.5;
   outline: none;
   border: none;
-  background-color: transparent;
+  background-color: var(--transparent);
 }
 
 .button-compare:hover {
@@ -1946,7 +1941,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  display: inline-block;
+  display: block;
   width: 32px;
   height: 32px;
   opacity: 0.3;
@@ -1977,6 +1972,13 @@
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
+}
+
+.copyright {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 34px;
 }
 
 .copyright:hover {
