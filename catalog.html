@@ -27,14 +27,16 @@
       <ul class="main-menu-list main-menu-columns reset-style">
         <li class="main-menu-item search">
           <form action="https://echo.htmlacademy.ru" method="get" class="modal-search">
-            <img width="13" height="13" src="img/icon_search.svg" alt="">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.66671 12C7.85003 11.9998 8.99924 11.6036 9.93137 10.8747L12.862 13.8053L13.8047 12.8627L10.874 9.932C11.6034 8.99977 11.9998 7.85029 12 6.66666C12 3.726 9.60737 1.33333 6.66671 1.33333C3.72604 1.33333 1.33337 3.726 1.33337 6.66666C1.33337 9.60733 3.72604 12 6.66671 12ZM6.66671 2.66666C8.87271 2.66666 10.6667 4.46066 10.6667 6.66666C10.6667 8.87266 8.87271 10.6667 6.66671 10.6667C4.46071 10.6667 2.66671 8.87266 2.66671 6.66666C2.66671 4.46066 4.46071 2.66666 6.66671 2.66666Z" fill="black"/>
+            </svg>
             <input type="search" name="search" id="search" aria-label="Поиск" placeholder="Поиск по сайту" class="input-search">
             <label for="search" class="visually-hidden">Поиск</label>
             <button type="submit" class="button-search">Найти</button>
           </form>
         </li>
         <li class="main-menu-item">
-          <a class="main-menu-link user-name">
+          <a href="" class="main-menu-link user-name">
             <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M6.49996 2.33333C7.69704 2.33333 8.66663 3.3775 8.66663 4.66666C8.66663 5.95583 7.69704
               7 6.49996 7C5.30288 7 4.33329 5.95583 4.33329 4.66666C4.33329 3.3775 5.30288 2.33333 6.49996
@@ -47,7 +49,7 @@
           <a href="" class="main-menu-link logout">Выйти</a>
         </li>
         <li class="main-menu-item">
-          <a href="" class="main-menu-link menu-item-hover">
+          <a href="" class="main-menu-link menu-item-hover compare">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M2.91675 5.36667H4.66675V11.0833H2.91675V5.36667ZM6.18342 2.91667H7.81675V11.0833H6.18342V2.91667ZM9.45008
                7.58334H11.0834V11.0833H9.45008V7.58334Z" fill="black"/>
@@ -90,7 +92,7 @@
                 <a href="" class="submenu-link">Виртуальная реальность</a>
               </li>
               <li class="submenu-item submenu-row-first">
-                <a href="" class="submenu-link">Фитнес браслеты</a>
+                <a href="" class="submenu-link">Фитнес-браслеты</a>
               </li>
               <li class="submenu-item submenu-row-first">
                 <a href="" class="submenu-link">Квадрокоптер</a>
@@ -102,7 +104,7 @@
                 <a href="" class="submenu-link">Умные часы</a>
               </li>
               <li class="submenu-item submenu-row-last">
-                <a href="" class="submenu-link">Экшн камеры</a>
+                <a href="" class="submenu-link">Экшн-камеры</a>
               </li>
             </ul>
           </li>
@@ -172,7 +174,7 @@
               <section class="filter">
                 <div class="filter-column">
                   <form method="get" action="https://echo.htmlacademy.ru" class="filter-inner">
-                    <fieldset class="filter-price-wrap">
+                    <fieldset class="filter-wrap filter-price-wrap">
                       <legend>Стоимость</legend>
                       <div class="range-filter">
                         <div class="range-controls">
@@ -194,7 +196,7 @@
                         </div>
                       </div>
                     </fieldset>
-                    <fieldset class="filter-color-wrap">
+                    <fieldset class="filter-wrap filter-color-wrap">
                       <legend>Цвет</legend>
                       <ul class="filter-color reset-style">
                         <li class="filter-color-item">
@@ -219,7 +221,7 @@
                         </li>
                       </ul>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="filter-wrap filter-bluetooth-wrap">
                       <legend>Bluetooth</legend>
                       <ul class="filter-bluetooth reset-style">
                         <li class="filter-bluetooth-item">
@@ -241,12 +243,12 @@
                 <ul class="products-list reset-style">
                   <li class="product">
                     <img class="product-image" src="img/product1.png" width="360" height="380"
-                      alt="Изображение: Любительская селфи-палка">
+                      alt="Любительская селфи-палка">
                     <div class="product-description-wrap">
                       <a href="" class="product-description">
-                        <h3>Любительская селфи&#8209;палка</h3>
+                        <h3>Любительская селфи&#45;палка</h3>
                       </a>
-                      <p>1100 руб.</p>
+                      <p>1&nbsp;100 руб.</p>
                     </div>
                     <div class="product-buttons-wrap">
                       <button type="button" class="button-addtocart button">В корзину</button>
@@ -255,12 +257,12 @@
                   </li>
                   <li class="product">
                     <img class="product-image" src="img/product2.png" width="360" height="380"
-                      alt="Изображение: Профессиональная селфи-палка">
+                      alt="Профессиональная селфи-палка">
                     <div class="product-description-wrap">
                       <a href="" class="product-description">
-                        <h3>Профессиональная селфи&#8209;палка</h3>
+                        <h3>Профессиональная<br>селфи&#45;палка</h3>
                       </a>
-                      <p>1500 руб.</p>
+                      <p>1&nbsp;500 руб.</p>
                     </div>
                     <div class="product-buttons-wrap">
                       <button type="button" class="button-addtocart button">В корзину</button>
@@ -269,26 +271,26 @@
                   </li>
                   <li class="product">
                     <img class="product-image" src="img/product3.png" width="360" height="380"
-                      alt="Изображение: Непотопляемая селфи-палка">
+                      alt="Непотопляемая селфи-палка">
                     <div class="product-description-wrap">
                       <a href="" class="product-description">
-                        <h3>Непотопляемая селфи&#8209;палка</h3>
+                        <h3>Непотопляемая<br>селфи&#45;палка</h3>
                       </a>
-                      <p>1500 руб.</p>
+                      <p>1&nbsp;500 руб.</p>
                     </div>
                     <div class="product-buttons-wrap">
                       <button type="button" class="button-addtocart button">В корзину</button>
                       <button type="button" class="button-compare">Добавить к сравнению</button>
                     </div>
                   </li>
-                  <li class="product">
+                  <li class="product new">
                     <img class="product-image" src="img/product4.png" width="360" height="380"
-                      alt="Изображение: Селфи-палка «Следуй за мной»">
+                      alt="Селфи-палка «Следуй за мной»">
                     <div class="product-description-wrap">
                       <a href="" class="product-description">
-                        <h3>Селфи&#8209;палка «Следуй за мной»</h3>
+                        <h3>Селфи&#45;палка «Следуй за мной»</h3>
                       </a>
-                      <p>1900 руб.</p>
+                      <p>1&nbsp;900 руб.</p>
                     </div>
                     <div class="product-buttons-wrap">
                       <button type="button" class="button-addtocart button">В корзину</button>
@@ -341,7 +343,7 @@
           </a>
           <ul class="main-menu-list footer-main-menu reset-style">
             <li class="main-menu-item">
-              <a class="main-menu-link footer-menu-link user-name">
+              <a href="" class="main-menu-link footer-menu-link user-name">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6.49996 2.33333C7.69704 2.33333 8.66663 3.3775 8.66663 4.66666C8.66663 5.95583 7.69704
                   7 6.49996 7C5.30288 7 4.33329 5.95583 4.33329 4.66666C4.33329 3.3775 5.30288 2.33333 6.49996

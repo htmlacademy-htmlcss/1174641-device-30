@@ -8,11 +8,11 @@
     <link rel="apple-touch-icon" href="img/152.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="main-header container">
-      <a class="main-logo">
+      <a class="main-logo" aria-label="Логотип интернет-магазина Девайс">
         <svg width="163" height="35" viewBox="0 0 163 35" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip7)">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.151001 0.701993V34.302H13.381C15.5624 34.3553 17.7309 33.954 19.7487 33.1235C21.7665 32.2929 23.5892 31.0514 25.101 29.478C26.6506 27.9007 27.8665 26.0273 28.6761 23.9697C29.4857 21.912 29.8724 19.7124 29.813 17.502C29.8724 15.2916 29.4857 13.092 28.6761 11.0343C27.8665 8.97669 26.6506 7.1033 25.101 5.52599C23.5891 3.9527 21.7663 2.7113 19.7486 1.88079C17.7308 1.05028 15.5623 0.648834 13.381 0.701993H-0.151001ZM7.582 26.91V8.09099H13.382C14.5845 8.04309 15.7838 8.24675 16.903 8.68895C18.0223 9.13115 19.0369 9.80215 19.882 10.659C20.7304 11.5766 21.3875 12.6541 21.8149 13.8285C22.2422 15.0029 22.4313 16.2507 22.371 17.499C22.4313 18.7473 22.2423 19.9951 21.8149 21.1695C21.3876 22.3439 20.7305 23.4214 19.882 24.339C19.0371 25.196 18.0225 25.8672 16.9032 26.3094C15.7839 26.7516 14.5845 26.9551 13.382 26.907H7.582V26.91ZM42.382 20.958H54.464V13.658H42.378V8.09099H55.669V0.701993H34.645V34.302H55.91V26.91H42.378V20.958H42.382ZM78.725 34.302L89.744 0.701993H81.286L73.795 25.422L66.304 0.701993H57.847L68.866 34.302H78.725ZM93.125 34.302H100.858V0.701993H93.125V34.302ZM131.74 32.886C134.233 31.574 136.321 29.6076 137.781 27.198L131.111 23.358C130.381 24.659 129.279 25.7121 127.946 26.382C126.505 27.1262 124.903 27.504 123.282 27.482C121.962 27.5449 120.643 27.3343 119.408 26.8635C118.173 26.3927 117.048 25.6718 116.105 24.746C115.195 23.7791 114.489 22.6393 114.028 21.3942C113.568 20.1492 113.362 18.8242 113.423 17.498C113.362 16.1718 113.568 14.8468 114.028 13.6017C114.489 12.3567 115.195 11.2168 116.105 10.25C117.048 9.32422 118.173 8.60333 119.408 8.13252C120.643 7.6617 121.962 7.45113 123.282 7.51399C124.893 7.49098 126.486 7.86172 127.921 8.59399C129.263 9.2718 130.373 10.3326 131.111 11.642L137.781 7.80199C136.294 5.39746 134.191 3.43378 131.691 2.11399C129.109 0.720899 126.216 0.00268346 123.282 0.0259933C113.503 -0.246007 105.485 7.71699 105.691 17.498C105.483 27.279 113.5 35.245 123.279 34.974C126.229 35.0012 129.138 34.283 131.737 32.886H131.74ZM149.621 20.958H161.703V13.658H149.618V8.09099H162.908V0.701993H141.885V34.302H163.15V26.91H149.618V20.958H149.621Z" fill="#000000"/>
@@ -27,7 +27,9 @@
       <ul class="main-menu-list main-menu-columns reset-style">
         <li class="main-menu-item search">
           <form action="https://echo.htmlacademy.ru" method="get" class="modal-search">
-            <img width="13" height="13" src="img/icon_search.svg" alt="">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.66671 12C7.85003 11.9998 8.99924 11.6036 9.93137 10.8747L12.862 13.8053L13.8047 12.8627L10.874 9.932C11.6034 8.99977 11.9998 7.85029 12 6.66666C12 3.726 9.60737 1.33333 6.66671 1.33333C3.72604 1.33333 1.33337 3.726 1.33337 6.66666C1.33337 9.60733 3.72604 12 6.66671 12ZM6.66671 2.66666C8.87271 2.66666 10.6667 4.46066 10.6667 6.66666C10.6667 8.87266 8.87271 10.6667 6.66671 10.6667C4.46071 10.6667 2.66671 8.87266 2.66671 6.66666C2.66671 4.46066 4.46071 2.66666 6.66671 2.66666Z" fill="black"/>
+            </svg>
             <input type="search" name="search" id="search" aria-label="Поиск" placeholder="Поиск по сайту" class="input-search">
             <label for="search" class="visually-hidden">Поиск</label>
             <button type="submit" class="button-search">Найти</button>
@@ -46,7 +48,7 @@
           </a>
         </li>
         <li class="main-menu-item">
-          <a href="" class="main-menu-link menu-item-hover">
+          <a href="" class="main-menu-link menu-item-hover compare">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M2.91675 5.36667H4.66675V11.0833H2.91675V5.36667ZM6.18342 2.91667H7.81675V11.0833H6.18342V2.91667ZM9.45008
                7.58334H11.0834V11.0833H9.45008V7.58334Z" fill="black"/>
@@ -89,7 +91,7 @@
                 <a href="" class="submenu-link">Виртуальная реальность</a>
               </li>
               <li class="submenu-item submenu-row-first">
-                <a href="" class="submenu-link">Фитнес браслеты</a>
+                <a href="" class="submenu-link">Фитнес-браслеты</a>
               </li>
               <li class="submenu-item submenu-row-first">
                 <a href="" class="submenu-link">Квадрокоптер</a>
@@ -101,7 +103,7 @@
                 <a href="" class="submenu-link">Умные часы</a>
               </li>
               <li class="submenu-item submenu-row-last">
-                <a href="" class="submenu-link">Экшн камеры</a>
+                <a href="" class="submenu-link">Экшн-камеры</a>
               </li>
             </ul>
           </li>
@@ -123,9 +125,9 @@
       <section class="popular-slider container">
         <h2 class="visually-hidden">Популярные товары</h2>
         <ul class="popular-slide-list reset-style">
-          <li class="popular-slide-item show">
+          <li class="popular-slide-item slide-selfy popular-slide-show">
             <div class="slide-image-wrapper">
-              <img src="img/fotoselfiestick.png" width="384" height="486" alt="Изображение: селфи-палка">
+              <img src="img/fotoselfiestick.png" width="384" height="486" alt="Изображение селфи-палки">
             </div>
             <div class="popular-slide-column">
               <div class="popular-slide-row-wrapper">
@@ -145,9 +147,9 @@
               </dl>
             </div>
           </li>
-          <li class="popular-slide-item">
+          <li class="popular-slide-item slide-fitness">
             <div class="slide-image-wrapper">
-              <img src="img/smart_tracker.png" width="345" height="485" alt="Изображение: фитнес-браслет">
+              <img src="img/smart_tracker.png" width="345" height="485" alt="Изображение фитнес-браслета">
             </div>
             <div class="popular-slide-column">
               <div class="popular-slide-row-wrapper">
@@ -156,16 +158,16 @@
               </div>
               <p class="popular-slide-text">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
                 не пропускать занятия и соблюдать диету.</p>
-              <a href="" class="button">Подробнее</a>
+              <a href="" class="slide-link button">Подробнее</a>
               <dl class="popular-slide-details">
                 <dt>48 часов</dt>
                 <dd>Без подзарядки</dd>
               </dl>
             </div>
           </li>
-          <li class="popular-slide-item">
+          <li class="popular-slide-item slide-dron">
             <div class="slide-image-wrapper">
-              <img src="img/dron.png" width="526" height="334" alt="Изображение: Квадрокоптер">
+              <img src="img/dron.png" width="526" height="334" alt="Изображение квадрокоптера">
             </div>
             <div class="popular-slide-column">
               <div class="popular-slide-row-wrapper">
@@ -174,12 +176,12 @@
               </div>
               <p class="popular-slide-text">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
                 мощным лазером, замаскированным под стандартную камеру.</p>
-              <a href="" class="button">Подробнее</a>
+              <a href="" class="slide-link button">Подробнее</a>
               <dl class="popular-slide-details">
-                <dt>50 м</dt>
-                <dd>Радиус поражения</dd>
                 <dt>800 м</dt>
                 <dd>Дальность полета</dd>
+                <dt>50 м</dt>
+                <dd>Радиус поражения</dd>
               </dl>
             </div>
           </li>
@@ -214,7 +216,7 @@
           </li>
           <li class="categories-item">
             <a href="" class="categories-link">
-              <div class="categories-svg-wrap">
+              <div class="categories-svg-wrap monopod-align">
                 <svg width="86" height="117" viewBox="0 0 86 117" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip1)">
                     <path d="M82.821 4.01099H3.32997C1.56897 4.01099 0.141968 5.43799 0.141968 7.19899V53.612C0.141968 55.375 1.56897 56.801 3.32997 56.801H82.822C84.584 56.801 86.011 55.374 86.011 53.612V7.19899C86.011 5.43799 84.583 4.01099 82.821 4.01099ZM8.39197 37.236H8.16597C6.40397 37.236 4.97697 35.807 4.97697 34.047V26.764C4.97697 25.003 6.40397 23.576 8.16597 23.576H8.39197V37.236ZM69.623 52.408H13.341V8.40199H69.623V52.408ZM78.4 34.552C76.111 34.552 74.254 32.697 74.254 30.405C74.254 28.113 76.11 26.258 78.4 26.258C80.691 26.258 82.548 28.113 82.548 30.405C82.548 32.697 80.691 34.552 78.4 34.552Z" fill="#363636"/>
@@ -228,7 +230,7 @@
                   </defs>
                 </svg>
               </div>
-              <h3>Моноподы для селфи</h3>
+              <h3>Моноподы для&nbsp;селфи</h3>
             </a>
           </li>
           <li class="categories-item">
@@ -336,7 +338,7 @@
               </div>
             </div>
             <ul class="advantages-slider-list reset-style">
-              <li class="advantages-slide delivery show">
+              <li class="advantages-slide slide-delivery show">
                 <div class="advantages-slide-wrapper">
                   <h3>Доставка</h3>
                   <p>
@@ -346,7 +348,7 @@
                   </p>
                 </div>
               </li>
-              <li class="advantages-slide warranty">
+              <li class="advantages-slide slide-warranty">
                 <div class="advantages-slide-wrapper">
                   <h3>Гарантия</h3>
                   <p>
@@ -356,7 +358,7 @@
                   </p>
                 </div>
               </li>
-              <li class="advantages-slide credit">
+              <li class="advantages-slide slide-credit">
                 <div class="advantages-slide-wrapper">
                   <h3>Кредит</h3>
                   <p>
@@ -375,22 +377,22 @@
         <ul class="brands-list reset-style">
           <li class="brands-item">
             <a href="" class="brands-link dji">
-              <img src="img/logo_DJI.png" width="260" height="100" alt="Изображение: DJI">
+              <img src="img/logo_DJI.png" width="260" height="100" alt="Логотип DJI">
             </a>
           </li>
           <li class="brands-item">
             <a href="" class="brands-link spgadgets">
-              <img src="img/logo_SPGadgets.png" width="260" height="100" alt="Изображение: SPGadgets">
+              <img src="img/logo_SPGadgets.png" width="260" height="100" alt="Логотип SPGadgets">
             </a>
           </li>
           <li class="brands-item">
             <a href="" class="brands-link gopro">
-              <img src="img/logo_GoPro.png" width="260" height="100" alt="Изображение: GoPro">
+              <img src="img/logo_GoPro.png" width="260" height="100" alt="Логотип GoPro">
             </a>
           </li>
           <li class="brands-item">
             <a href="" class="brands-link vive">
-              <img src="img/logo_Vive.png" width="260" height="100" alt="Изображение: Vive">
+              <img src="img/logo_Vive.png" width="260" height="100" alt="Логотип Vive">
             </a>
           </li>
         </ul>
@@ -415,10 +417,10 @@
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
             проверить работоспособность покупки. Всякое бывает.
           </p>
-          <a href="" class="contacts-map-link show-modal-map">
+          <a href="" class="contacts-map-link">
             <img src="img/map.jpg" width="560" height="222" alt="Карта с адресом магазина Device">
           </a>
-          <a href="" class="button">Напишите нам</a>
+          <a href="" class="button contact-form-link">Напишите нам</a>
         </section>
       </div>
     </main>
@@ -539,12 +541,10 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548883493!2d37.52742395155921!3d55.68703098044026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sfi!4v1613497769871!5m2!1sru!2sfi" style="border:0;" allowfullscreen="" aria-hidden="false"
         tabindex="0">
       </iframe>
-      <div class="modal-close">
-        <button type="button" class="close" tabindex="0"></button>
-      </div>
+      <button type="button" class="modal-close" tabindex="0"></button>
     </section>
 
-    <section class="modal contact-modal">
+    <section class="modal modal-contact">
       <h2 class="visually-hidden">Связаться с нами</h2>
       <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="contact-form-inner">
@@ -559,14 +559,13 @@
         </div>
         <div class="contact-field-wrap">
           <label for="textarea-field">Текст письма:</label>
-          <textarea name="textarea" id="textarea-field" cols="25" rows="8" placeholder="В свободной форме"></textarea>
+          <textarea class="contact-form-text" name="textarea" id="textarea-field" cols="25" rows="8" placeholder="В свободной форме"></textarea>
         </div>
         <button type="submit" class="button contact-form-button">Отправить</button>
-        <div class="modal-close">
-          <button type="button" class="close" tabindex="0"></button>
-        </div>
+        <button type="button" class="modal-close" tabindex="0"></button>
       </form>
     </section>
 
+    <script src="js/script.min.js"></script>
   </body>
 </html>
