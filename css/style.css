@@ -179,6 +179,7 @@
 }
 
 .main-menu-link {
+  overflow-wrap: break-word;
   /*Flex*/
   display: flex;
   align-items: center;
@@ -186,6 +187,14 @@
 
 .user-name {
   margin-right: 22px;
+}
+
+.user-name svg {
+  min-width: 13px;
+}
+
+.enter svg {
+  min-width: 13px;
 }
 
 .logout {
@@ -199,7 +208,12 @@
 
 /*perfect pixel разные отступы по макету*/
 .compare svg {
+  min-width: 14px;
   margin-right: 13px;
+}
+
+.basket svg {
+  min-width: 10px;
 }
 
 .menu-item-hover:hover {
