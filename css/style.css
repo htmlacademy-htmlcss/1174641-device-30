@@ -54,7 +54,8 @@
   --special-yellow-light: #F7E296;
   --special-yellow-light-rgb: 247, 226, 150;
   --special-green: #91C92F;
-  --status: #F6DADA;;
+  --status: #F6DADA;
+  --focus: #0000FF;
   --transparent: transparent;
 }
 
@@ -389,6 +390,11 @@
   display: grid;
 }
 
+.catalog:focus-within .submenu-columns {
+  /*Grid*/
+  display: grid;
+}
+
 .submenu-column {
   /*Grid*/
   display: grid;
@@ -605,6 +611,11 @@
   background: var(--special-yellow-dark);
 }
 
+.button:focus {
+  border: 2px solid var(--focus);
+  border-radius: 2px;
+}
+
 .button:active {
   background-color: var(--special-yellow-dark);
   color: rgba(var(--basic-black-rgb), 0.3);
@@ -657,6 +668,10 @@
 
 .slide-control:active {
   box-shadow: 0 0 0px 2px var(--basic-white) inset, 0 0 0px 3px var(--basic-black) inset;
+}
+
+.slide-control:focus {
+  border: 2px solid var(--focus);
 }
 
 .categories {
@@ -1026,6 +1041,15 @@
   margin-bottom: 72px;
 }
 
+@keyframes move-modal {
+  from {
+    top: -1000px;
+  }
+  to {
+    top: 20px;
+  }
+}
+
 .modal {
   position: fixed;
   top: 20px;
@@ -1037,6 +1061,9 @@
   height: 550px;
   box-shadow: 0 5px 10px 0px var(--basic-grey);
   box-sizing: border-box;
+  animation-name: move-modal;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 .modal-map {
@@ -1497,7 +1524,9 @@
 }
 
 .filter-color-input {
-  display: none;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
 
 .filter-color-label {
@@ -1522,6 +1551,10 @@
   border: none;
 }
 
+.filter-color-input:focus + .filter-color-label::before {
+  border: 2px solid var(--focus);
+}
+
 .filter-color-input:disabled + .filter-color-label {
   opacity: 0.3;
 }
@@ -1544,7 +1577,9 @@
 }
 
 .filter-bluetooth-input {
-  display: none;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
 
 .filter-bluetooth-label {
@@ -1568,6 +1603,10 @@
 .filter-bluetooth-input:checked + .filter-bluetooth-label::before {
   content: url("../img/radio_on.svg");
   border: none;
+}
+
+.filter-bluetooth-input:focus + .filter-bluetooth-label::before {
+  border: 2px solid var(--focus);
 }
 
 .filter-bluetooth-input:disabled + .filter-bluetooth-label {
